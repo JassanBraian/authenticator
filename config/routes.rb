@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  get 'example/demo'
-
+  resources :tweets
   
+  
+  get 'example/demo'  
   
   get "/hola", to: "main#hello"
 
